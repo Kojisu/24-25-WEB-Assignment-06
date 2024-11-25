@@ -1,0 +1,63 @@
+@maincolor: #rgba(102, 140, 255);
+@width: 400px;
+@height: @width + 200px;
+
+* {
+  display: flex;
+  //align-content: center;
+  //justify-content: center;
+}
+
+body,
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: @width;
+  height: @height;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px 5px lightgray;
+}
+
+.top {
+  width: 400px;
+  height: 50px;
+  border: 1px solid @maincolor;
+  font-size: 25px;
+  justify-content: center;
+}
+
+.inputValue {
+  margin-bottom: 10px;
+}
+
+.bottom {
+  width: 400px;
+  height: 50px;
+  border: 1px solid @maincolor;
+  font-size: 12px;
+}
+
+.addItem {
+  width: 200px;
+  font-size: 14px;
+  color: @maincolor;
+}
+
+.item1 {
+  flex: 1;
+  text-align: center;
+}
+
+.item2 {
+  flex: 1;
+  text-align: center;
+}
+
+// 상단부분 font-size: 25px;
+// 하단부분 font-size : 12px;
+// 삭제버튼 font-size : 14px;
+// 일정 font-size : 14px;
